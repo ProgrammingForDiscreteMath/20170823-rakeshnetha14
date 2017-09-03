@@ -1,0 +1,15 @@
+For the Catalan and Fiboncci generators, we want functions which yield **all** 
+the numbers, (i.e., the infinite) sequences. So instead of
+~~~
+for i in range(10):
+    yield smthg
+~~~
+you would like code like
+~~~
+i = 1
+while True:
+    yield smthg
+    i += 1
+~~~
+
+**Score 28/35**
